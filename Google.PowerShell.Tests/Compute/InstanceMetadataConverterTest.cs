@@ -15,7 +15,7 @@ namespace Google.PowerShell.Tests.Common
         [Test]
         public void TestConversion()
         {
-            Metadata metadata = InstanceMetadataPSConverter.BuildMetadata(new Hashtable
+            var metadata = InstanceMetadataPSConverter.BuildMetadata(new Hashtable
             {
                 {"key", "value"},
                 {"key2", "value2"}

@@ -26,7 +26,7 @@ namespace Google.PowerShell.Common
         /// <summary>
         /// The target Type that will be transformed. e.g. A Google.Aips.Compute.v1.Zone object.
         /// </summary>
-        public Type TypeToTransform { get; set; }
+        public System.Type TypeToTransform { get; set; }
 
         /// <summary>
         /// The name of the Property/Field to return. e.g. Name, a property of the type Zone
@@ -148,7 +148,7 @@ namespace Google.PowerShell.Common
     {
         private PropertyByTypeTransformationAttribute _typeTransformationAttribute;
 
-        public ArrayPropertyTransformAttribute(Type typeToTransform, string property)
+        public ArrayPropertyTransformAttribute(System.Type typeToTransform, string property)
         {
             _typeTransformationAttribute = new PropertyByTypeTransformationAttribute
             {
